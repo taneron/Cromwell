@@ -104,9 +104,9 @@ const wrapGetProps = (pageName: TDefaultPageName | string,
             }
         }
 
-        if (getType === 'getStaticProps') {
-            pageProps.revalidate = childStaticProps?.revalidate ?? 60;
-        }
+        // if (getType === 'getStaticProps') {
+        //     pageProps.revalidate = childStaticProps?.revalidate ?? 60;
+        // }
 
         return removeUndefined(pageProps);
     }

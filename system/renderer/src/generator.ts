@@ -273,8 +273,10 @@ const devGenerate = async (themeName: string, options) => {
 
                 import * as PageComponents from '${resolvePagePath(pageName)}';
 
-                export const getStaticPaths = createGetStaticPaths('${pageName}', PageComponents);
-                export const getStaticProps = createGetStaticProps('${pageName}', PageComponents);
+                // export const getStaticPaths = createGetStaticPaths('${pageName}', PageComponents);
+                ${pageName !== '404' ? `
+                export const getServerSideProps = createGetStaticProps('${pageName}', PageComponents);
+                ` : ''}
                 export default PageComponents.default; 
             `;
         }
