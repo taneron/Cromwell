@@ -42,7 +42,7 @@
     "@nestjs/throttler": "2.0.0",
     "@node-rs/bcrypt": "1.4.2",
     "apollo-server": "3.3.0",
-    "apollo-server-core": "3.3.0",
+    "apollo-server-core": "3.12.1",
     "apollo-server-fastify": "3.3.0",
     "archiver": "5.3.0",
     "cacache": "15.2.0",
